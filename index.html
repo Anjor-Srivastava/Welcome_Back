@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome back Raj Bhaiya</title>
+<link rel="icon" href="icon.png">
+</head>
+
+<body id="screen">
+<h1>WELCOME BACK!</h1>
+<div>
+<img src="icon.png">
+</div>
+<p>Welcome back Raj Bhaiya. We missed you a lot</p>
+<button onclick="changebgColor()">Change background color</button>
+<style>
+body{
+text-align: center;
+}
+p{
+font-size: 30px;
+}
+</style>
+<script>
+var c = ["green", "blue", "orange", "red", "indigo", "violet", "pink", "gray", "lime", "navy", "coral", "gold", "white"];
+var i = 0;
+function changebgColor(){
+if (i > 12){
+i = 0;
+}
+document.getElementById("screen").style.backgroundColor= c[i];
+i++;
+}
+</script>
+</body>
+
+</html>
